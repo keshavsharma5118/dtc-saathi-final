@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saathi dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/emp.util.css">
+    <link rel="stylesheet" href="/css/emp.dashboard.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/emp.dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="/img/dtc.png" alt="DTC Emblem">
+                <h1 id="dtc">DTC Saathi</h1>
+            </div>
+            <div class="government-logos">
+                <img src="/img/emblem.png" alt="Indian Government">
+                <img src="/img/india.png" alt="Indian Flag">
+                <img src="/img/azadi.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+            <div class="profile-info">
+               <a href="/api/v1/users/emp/profile"><span class="profile-icon"><img src="/img/user1.png" alt="user" height="40px" ></span></a> 
+                <span class="schedular-id">Employee #ID</span>
+            </div>
+            <div class="logout-time">
+                <span id="datetime"></span>
+                <span class="material-icons logout-icon">logout</span>
+
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="/api/v1/users/emp/Dashboard" class="active">Dashboard </a ></li>
+                        <li><a href="/api/v1/users/emp/leavereq">Leave Request</a></li>
+                        <li><a href="/api/v1/users/emp/viewstatus">View Status</a></li>
+                    
+                    
+                </ul>
+            </nav>
+
+            <div class="profile-details">
+                <div class="main-container">
+                    <div class="duty-table-section">
+                        <h2 class="duty-table-title">Duty Table</h2>
+                        <table class="duty-table">
+                            <thead>
+                                <tr>
+                                    <th>Route</th>
+                                    <th>Bus ID</th>
+                                    <th>Origin</th>
+                                    <th>Destination</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Conductor</th>
+                                    <th>LINK</th>
+                                    <th>UNLINK</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Table rows go here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+
+            </div>

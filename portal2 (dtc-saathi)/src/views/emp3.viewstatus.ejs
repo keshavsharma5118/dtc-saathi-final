@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>saathi request status</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/emp.util.css">
+    <link rel="stylesheet" href="/css/emp.viewstatus.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- White Header -->
+        <header class="header-white">
+            <div class="logo">
+                <img src="/img/dtc.png" alt="DTC Emblem">
+                <h1 id="dtc">DTC Saathi</h1>
+            </div>
+            <div class="government-logos">
+                <img src="/img/emblem.png" alt="Indian Government">
+                <img src="/img/india.png" alt="Indian Flag">
+                <img src="/img/azadi.png" alt="Azadi Ka Amrit Mahotsav">
+            </div>
+        </header>
+
+        <!-- Yellow Sub-Header -->
+        <header class="header-yellow">
+            <div class="profile-info">
+                <a href="/api/v1/users/emp/profile"><span class="profile-icon"><img src="/img/user1.png" alt="user" height="40px" ></span></a> 
+                <span class="schedular-id">Employee #ID</span>
+            </div>
+            <div class="logout-time">
+                <span id="datetime"></span>
+                <span class="material-icons logout-icon">logout</span>
+
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="/api/v1/users/emp/Dashboard">Dashboard </a ></li>
+                        <li><a href="/api/v1/users/emp/leavereq">Leave Request</a></li>
+                        <li><a href="/api/v1/users/emp/viewstatus" class="active">View Status</a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <div class="profile-details">
+                <div class="status-container">
+                    <div class="status-banner">STATUS - APPROVED</div>
+                    <div class="status-details">
+                        <div class="status-row">
+                            <label class="status-label">E ID</label>
+                            <div class="status-value">dtc001</div>
+                        </div>
+                        <div class="status-row">
+                            <label class="status-label">NAME</label>
+                            <div class="status-value">Fardeen Khan</div>
+                        </div>
+                        <div class="status-row">
+                            <label class="status-label">DATE</label>
+                            <div class="status-value">FROM: dd/mm/yyyy - TO: dd/mm/yyyy</div>
+                        </div>
+                        <div class="status-row">
+                            <label class="status-label">SUBJECT</label>
+                            <div class="status-value">xyz1234abc</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
